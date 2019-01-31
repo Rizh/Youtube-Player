@@ -165,7 +165,7 @@ public class PlaylistActivity extends Activity {
 
                 VideoItem searchResult = searchResults.get(position);
 
-                Picasso.with(getApplicationContext())
+                Picasso.get()
                         .load(searchResult.getThumbnailURL()).into(thumbnail);
                 title.setText(searchResult.getTitle());
                 // description.setText(searchResult.getDescription());
